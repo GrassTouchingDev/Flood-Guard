@@ -1,0 +1,41 @@
+name: FloodGuard
+version: '1.0.0'
+main: com.example.floodguard.FloodGuardPlugin
+api-version: '1.21'
+description: "Protection contre les griefs par fluides et machines volantes a pistons."
+author: Example
+
+commands:
+  floodguard:
+    description: "Commandes admin FloodGuard."
+    usage: /floodguard <reload|status|stats|toggle|radius|purge>
+    aliases: [fg]
+    permission: floodguard.command.status
+
+permissions:
+  floodguard.admin:
+    description: "Acces complet aux commandes FloodGuard."
+    default: op
+    children:
+      floodguard.command.reload: true
+      floodguard.command.status: true
+      floodguard.command.stats: true
+      floodguard.command.toggle: true
+  floodguard.command.reload:
+    description: "Recharger la configuration FloodGuard."
+    default: op
+  floodguard.command.status:
+    description: "Voir l'etat de FloodGuard."
+    default: op
+  floodguard.command.stats:
+    description: "Voir les statistiques FloodGuard."
+    default: op
+  floodguard.command.toggle:
+    description: "Activer/desactiver FloodGuard."
+    default: op
+  floodguard.bypass:
+    description: "Ignorer les notifications FloodGuard."
+    default: false
+  floodguard.notify:
+    description: "Recevoir les alertes detaillees FloodGuard."
+    default: op
