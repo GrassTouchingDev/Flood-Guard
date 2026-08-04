@@ -81,9 +81,7 @@ worlds:
 
 fluids:
   custom:
-    - "create:honey"
-    - "create:chocolate"
-    - "twilightforest:fiery_essence"
+   "plugin name": "fluid name"
 ```
 
 ### Configuration Options
@@ -112,11 +110,7 @@ When a flying machine attempts to transport fluids for griefing, the plugin can 
 
 ## Supported Fluids
 
-By default, FloodGuard works with vanilla fluids and can also monitor custom fluids such as:
-
-- Create: Honey
-- Create: Chocolate
-- Twilight Forest: Fiery Essence
+By default, FloodGuard works with vanilla fluids and can also monitor custom fluids from other plugins.
 
 Additional fluids can be added through the configuration.
 
