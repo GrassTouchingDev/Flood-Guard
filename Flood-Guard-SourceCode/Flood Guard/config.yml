@@ -1,0 +1,30 @@
+## FloodGuard - protection contre les griefs fluides + machines volantes
+enabled: true
+debug: false
+
+detection:
+  # rayon de detection des fluides autour d'une machine volante
+  fluid-radius: 3
+  # rayon de detection des machines volantes autour d'un fluide
+  machine-radius: 3
+
+spread:
+  # distance max de propagation d'un fluide depuis son origine si machine proche
+  max-blocks: 2
+
+block:
+  pistons: true
+  tnt: true
+
+worlds:
+  disabled: []
+
+fluids:
+  custom:
+    - "create:honey"
+    - "create:chocolate"
+    - "twilightforest:fiery_essence"
+
+messages:
+  blocked-machine: "[FloodGuard] Machine volante bloquee : fluide detecte a proximite."
+  blocked-spread: "[FloodGuard] Propagation de fluide limitee."
